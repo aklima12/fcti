@@ -1,0 +1,234 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    height:1000vh;
+}
+.contenar{
+    position:relative;
+    z-index:52414;
+}
+.contenar .row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:white;
+    padding:10px 40px;
+    box-shadow:0px 0px 5px 15px rgba(0,0,0,0.1);
+}
+.contenar .row .col img{
+    width:600px;
+    height:150px;
+}
+.contenar .row .icon i{
+    font-size:20px;
+    margin:10px;
+    color:#b91759;
+}
+.contenar .row .icon button{
+    background:#9c0f47;
+   margin:10px;
+   padding:10px;
+   color:white;
+   border:none;
+   font-size:25px;
+  border-radius:10px;
+   
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
+
+
+  @media only screen and (min-width: 1200px) {
+    .col{
+    background:;
+    font-size:18px;
+    
+    }
+}
+                               /* menubar */
+
+
+
+.menubar{
+    position:relative;
+    top:0;
+    left:0;
+    width:100%;
+    height:auto;
+    z-index:100;
+    margin:0 auto;
+    padding:10px 0px;
+    background:white;
+    box-shadow:0px 12px 20px rgba(0, 0, 0, 0.3);
+}
+.menubar .row .col ul{
+    list-style:none;
+}
+.menubar .row .col ul li{
+    display:inline;
+}
+.menubar .row .col ul li a{
+    margin:10px;
+    text-decoration:none;
+    font-size:18px;
+    color:black;
+}
+.menubar .row .col ul li a:hover{
+    color:#b91759;
+}
+
+.sticky{
+    position:fixed;
+    top:o;
+}
+
+
+
+                                /* side offer */
+
+
+
+.site-offer{
+    position: fixed;
+    left: 0;
+    top: 48%;
+    width: 298px;
+    height: 120px;
+    z-index: 999;
+    background-image: url(offer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition:1s;
+    opacity: 1;
+
+}
+    &:hover i.fa.fa-times{
+        display:none;
+    }
+    
+    i.fa.fa-times {
+        position: absolute;
+        top: -3px;
+        right:0;
+        width: 40px;
+        height: 40px;
+        color:$button-bg;
+        text-align: center;
+        line-height: 40px;
+        font-size: 22px;
+        cursor: pointer;
+        display: none;
+        
+    }
+
+.fa-remove:before, .fa-close:before, .fa-times:before {
+        content: "\f00d";
+    }
+.site-offer:hover i.fa.fa-times {
+        display: block;
+}
+
+
+                            /* .welcome-part */
+
+
+
+
+.welcome-part .row .col h5{
+    font-size:20px;
+    margin:10px;
+}
+    
+.welcome-part .row .col h5 i{
+    font-size:25px;
+    color:#b91759;
+    margin:10px;
+}
+
+.welcome-part .row .col h2{
+    font-size:30px;
+    color:black;
+    margin:10px;
+}
+
+.welcome-part .row .col h1{
+    font-size:30px;
+    color:crimson;
+    margin:10px;
+}
+.welcome-part .row .col p{
+    font-size:18px;
+   
+}
+
+
+.welcome-part .row .btn-part{
+    display: flex;
+    margin: 30px 0px;
+}    
+
+.welcome-part .row .btn-part a {
+    text-decoration: none;
+    width: 100px;
+    padding: 5px 12px;
+    background: linear-gradient(#e91e63, #720127);
+    color: white;
+    margin: 0 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+}
+
+.welcome-part .row .btn-part ::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-bottom: 2px solid #e91e63;
+    border-right: 2px solid #e91e63;
+    bottom: -6px;
+    right: -6px;
+    transition: all 0.4s;
+    opacity: 1;
+}
+.welcome-part .row .btn-part ::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-top: 2px solid #e91e63;
+    border-left: 2px solid #e91e63;
+    top: -6px;
+    left: -6px;
+    transition: all 0.4s;
+    opacity: 1;
+}
+
+.welcome-part .row .btn-part :hover::before {
+    width: 108px;
+    height: 44px;
+}
+
+.welcome-part .row .btn-part :hover::after {
+    width: 108px;
+    height: 44px;
+}
+
+.welcome-part .row .img-part img{
+width:80px;
+height:100px auto;
+}
+
+.welcome-part .row .img-part p{
+    font-size:20px;
+    color:black;
+}
